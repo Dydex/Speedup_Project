@@ -1,0 +1,73 @@
+* {
+    margin: 5px;
+}
+
+body {
+    background-color: beige;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 20px;
+}
+
+.navlist {
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.navlist a {
+    text-decoration: none;
+}
+
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.whatwedo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+}
+
+.motto {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.ourwork {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
+.beauty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
