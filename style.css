@@ -1,37 +1,85 @@
-* {
-    margin: 5px;
+*, *::before, *::after{
+    box-sizing: border-box;
+   
 }
 
+
 body {
-    background-color: beige;
+    background-color: red;
+    padding: 50px;
+}
+
+
+
+.firstimage img {
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 100%;
 }
 
 header {
+    background-color: #FEF8F1;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
-    margin: 20px 0px 20px;
+    padding: 10px;
+    
 }
+
+
 
 .navlist {
     display: flex;
     font-size: 20px;
-    gap: 20px;
+    gap: 24px;
 }
 
 .navlist a {
     text-decoration: none;
+    color: #1B1B1B;
+}
+
+.dp p {
+    font-size: 24px;
+    color: #1B1B1B;
+}
+
+button{
+    background-color: #F64F02 ;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.section1 {
+    background-color: #FEF8F1;
+    padding: 10px;
 }
 
 .aboutus {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.aboutus h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
 }
 
 .whatwedo {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.whatwedo p {
+   font-size: 20px;
+    margin-top: 0px;
 }
 
 .button {
@@ -45,9 +93,17 @@ header {
     gap: 60px;
 }
 
+.threepics {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between;
+}
+
 .ourwork {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .image {
@@ -70,4 +126,46 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#recentdesigns {
+    background-color: #FEE7CC;
+    margin: 0px;
+    padding: 0px;
+}
+
+.recentdesigns {
+    display: flex;
+}
+
+.recentdesigns h2 {
+    font-size: 60px;
+}
+
+.houses {
+    display: flex;
+
+}
+
+.houses2 {
+    display: flex;
+}
+
+.ourprocess {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerimages {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
 }
