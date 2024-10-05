@@ -5,7 +5,7 @@
 
 
 body {
-    background-color: red;
+    background-color: #FEF8F1;
     padding: 50px;
 }
 
@@ -32,7 +32,7 @@ header {
 
 .navlist {
     display: flex;
-    font-size: 20px;
+    font-size: 17px;
     gap: 24px;
 }
 
@@ -58,6 +58,7 @@ button{
 .section1 {
     background-color: #FEF8F1;
     padding: 10px;
+    color: #1B1B1B;
 }
 
 .aboutus {
@@ -84,7 +85,9 @@ button{
 
 .button {
     display: flex;
-    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .motto {
@@ -94,9 +97,28 @@ button{
 }
 
 .threepics {
-    width: 100%; 
+    width: 100%;
     display: flex; 
-    justify-content: space-between;
+    padding-bottom: 50px; 
+    gap: 30px;
+}
+
+.picone {
+    padding-top: 40px;
+    height: 350px;
+    width: 400px;
+}
+
+.pictwo {
+    padding-top: 40px;
+    height: 350px;
+    width: 400px;
+}
+
+.picthree {
+    padding-top: 40px;
+    height: 350px;
+    width: 400px;
 }
 
 .ourwork {
@@ -104,12 +126,20 @@ button{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    background-color: #FEF8F1;
+    color: #1B1B1B;
+    padding: 10px;
+    padding-bottom: 80px;
 }
 
 .image {
     display: flex;
+    gap: 40px;
     flex-direction: column;
+    align-items: end;
+    justify-content: end;
 }
+
 
 .beauty {
     display: flex;
@@ -117,9 +147,27 @@ button{
     align-items: center;
 }
 
+.beauty h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.beauty p {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.workbtn {
+    margin-top: 30px;
+    width: 400px;
+}
+
 .review {
     display: flex;
     flex-direction: row;
+    gap: 40px;
+    margin-top: 20px;
 }
 
 .reviews {
@@ -128,32 +176,68 @@ button{
     align-items: center;
 }
 
+.reviews h3 {
+    margin-bottom: 0px;
+}
+
 #recentdesigns {
     background-color: #FEE7CC;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
+    color: #1B1B1B;
 }
 
 .recentdesigns {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recentdesigns button {
+    height: 40px;
 }
 
 .recentdesigns h2 {
     font-size: 60px;
+    margin-bottom: 20px;
 }
 
 .houses {
     display: flex;
-
+    justify-content: space-between;
+    margin-top: 0px;
+    font-size: 18px;
 }
 
 .houses2 {
     display: flex;
+    justify-content: space-between;
+    font-size: 18px;
 }
 
 .ourprocess {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-right: 0px;
+}
+
+.ourprocess h1 {
+    font-size: 60px;
+}
+
+.pro {
+    display: flex;
+    gap: 40px;
+}
+
+.pro h6 {
+    margin-top: 1px;
+    font-size: 20px;
+}
+
+.pro strong {
+    font-size: 20px;
 }
 
 .footerimages {
@@ -161,7 +245,7 @@ button{
     flex-direction: row;
     max-width: 100%;
     width: auto;
-    margin: 0px;
+    margin-top: 80px;
     padding: 0px;
 }
 
