@@ -7,6 +7,9 @@
 body {
     background-color: #FEF8F1;
     padding: 50px;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -187,6 +190,11 @@ button{
     color: #1B1B1B;
 }
 
+.direction {
+    display: flex;
+    justify-content: space-between;
+}
+
 .recentdesigns {
     display: flex;
     justify-content: space-between;
@@ -224,6 +232,7 @@ button{
 
 .ourprocess h1 {
     font-size: 60px;
+    margin-bottom: 40px;
 }
 
 .pro {
@@ -234,22 +243,42 @@ button{
 .pro h6 {
     margin-top: 1px;
     font-size: 20px;
+    color: #F64F02;
 }
 
 .pro strong {
     font-size: 20px;
+    color: #1B1B1B;
+}
+
+.pro p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #1B1B1B;
+}
+
+.lastbtn {
+    margin-top: 20px;
+    padding-left: 0px;
 }
 
 .footerimages {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
-    width: auto;
     margin-top: 80px;
     padding: 0px;
+    gap: 6.5px;
 }
 
 footer {
-    background-color: black;
-    height: 200px;
+    background-color: #1B1B1B;
+    height: 100px;
+    padding: 0px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
 }
