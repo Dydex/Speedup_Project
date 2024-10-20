@@ -1,52 +1,87 @@
 *, *::before, *::after{
     box-sizing: border-box;
-   
 }
 
 
 body {
     background-color: #FEF8F1;
-    padding: 50px;
+    padding: 0;
     font-family: "roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-
-
-.firstimage img {
-    display: flex;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    width: 100%;
-}
-
-header {
+nav {
     background-color: #FEF8F1;
-    display: flex;
-    justify-content: space-between;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
     width: 100%;
-    align-items: center;
-    padding: 10px;
-    
-}
-
-
-
-.navlist {
+    list-style: none;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 17px;
-    gap: 24px;
 }
 
-.navlist a {
+nav a {
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
     color: #1B1B1B;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+
 }
 
 .dp p {
     font-size: 24px;
     color: #1B1B1B;
+}  
+
+main {
+    width: 100%;
+}
+
+/* FIRSTSECTION */
+.firstsection{
+    background-color: #FEF8F1; 
+}
+
+.firstimage img {
+    display: flex;
+    width: 100%;
+}
+
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 button{
@@ -58,16 +93,9 @@ button{
     border-radius: 5px;
 }
 
-.section1 {
-    background-color: #FEF8F1;
-    padding: 10px;
-    color: #1B1B1B;
-}
 
-.aboutus {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.section1 {
+    color: #1B1B1B;
 }
 
 .aboutus h1 {
@@ -81,9 +109,15 @@ button{
     align-items: center;
 }
 
-.whatwedo p {
+.paragraph {
    font-size: 20px;
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraph p {
+    margin-top: 0;
 }
 
 .button {
@@ -100,70 +134,89 @@ button{
 }
 
 .threepics {
-    width: 100%;
-    display: flex; 
     padding-bottom: 50px; 
-    gap: 30px;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
 }
 
 .picone {
     padding-top: 40px;
-    height: 350px;
-    width: 400px;
+    width: 33.3%;
 }
 
 .pictwo {
     padding-top: 40px;
-    height: 350px;
-    width: 400px;
+    width: 33.3%;
 }
 
 .picthree {
     padding-top: 40px;
-    height: 350px;
-    width: 400px;
+    width: 31.3%;
+}
+
+/* Section Two */
+.secondsection{
+    width: 100%;
 }
 
 .ourwork {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
     background-color: #FEF8F1;
     color: #1B1B1B;
-    padding: 10px;
     padding-bottom: 80px;
+    width: 100%;
+}
+
+#oneimage {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    margin-left: 4rem;
+}
+
+.oneimage {
+    width: 80%;
 }
 
 .image {
     display: flex;
-    gap: 40px;
     flex-direction: column;
+    gap: 40px;
     align-items: end;
     justify-content: end;
 }
-
 
 .beauty {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 45%;
 }
 
 .beauty h1 {
-    font-size: 50px;
     padding-top: 20px;
     margin-bottom: 0px;
+    font-size: 4.5vw;
 }
+
 
 .beauty p {
     margin-bottom: 0px;
     margin-top: 10px;
+   
+}
+
+.paragraphtwo {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .workbtn {
     margin-top: 30px;
-    width: 400px;
+    /* width: 40vw; */
 }
 
 .review {
@@ -183,10 +236,24 @@ button{
     margin-bottom: 0px;
 }
 
+.image {
+    width: 28%;
+    margin-right: 3rem;
+}
+
+.smallone {
+    width: 90%;
+} 
+
+.smalltwo {
+    width: 60%;
+} 
+
+/* SECTION THREE */
 #recentdesigns {
     background-color: #FEE7CC;
     margin: 0px;
-    padding: 10px;
+    padding: 3rem;
     color: #1B1B1B;
 }
 
@@ -215,19 +282,43 @@ button{
     justify-content: space-between;
     margin-top: 0px;
     font-size: 18px;
+    gap: 2rem;
+}
+
+.directionimageone img {
+    width: 100%;
+}
+
+.directionimagetwo img {
+    width: 100%;
 }
 
 .houses2 {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    gap: 2rem;
 }
 
-.ourprocess {
+.directionimagethree img {
+    width: 100%;
+}
+
+.directionimagefour img {
+    width: 100%;
+}
+
+/* SECTIONFOUR */
+.sectionfour {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 0px;
+    width: 100%;
+}
+
+.process {
+    width: 50%;
 }
 
 .ourprocess h1 {
@@ -262,17 +353,38 @@ button{
     padding-left: 0px;
 }
 
+.bigimage {
+    width: 48%;
+}
+
+.bigimage img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FIFTHSECTION */
+.fifthsection {
+    
+    margin-top: 4rem;
+}
+
 .footerimages {
     display: flex;
     flex-direction: row;
-    margin-top: 80px;
-    padding: 0px;
-    gap: 6.5px;
+    padding-right: 0px;
+    justify-content: space-between;
+    width: 100%;
 }
 
+.footerimages img {
+    width: 16%;
+
+}
+
+/* FOOTER */
 footer {
     background-color: #1B1B1B;
-    height: 100px;
     padding: 0px;
 }
 
@@ -281,4 +393,118 @@ footer {
     justify-content: space-around;
     align-items: center;
     color: white;
+}
+
+
+@media screen and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .aboutus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .motto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragraph {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .paragraph p{
+        margin: 0;
+    }
+
+    .threepics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .picone {
+        padding: 0px;
+        width: 90%;
+    }
+    
+    .pictwo {
+        padding: 0px;
+        width: 90%;
+    }
+    
+    .picthree {
+        padding: 0px;
+        width: 90%;
+    }
+
+    .ourwork{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    #oneimage {
+        width: 90%;
+        margin-left: 0rem;
+    }
+
+    .beauty {
+        width: 95%;
+    }
+
+    .paragraphtwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sectionfour{
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        gap: 1rem;
+    }
+
+    .process{
+        width: 100%;
+    }
+
+    .bigimage{
+        width: 100%;
+    }
+
+    .footerimages {
+        display: flex;
+        flex-direction: row;
+        padding-right: 0px;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .footerimages img {
+        width: 15%;
+    
+    }
+
+    /* header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    } */
 }
