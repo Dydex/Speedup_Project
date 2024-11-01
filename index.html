@@ -11,18 +11,23 @@
 
 <body>
   <nav>
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">About Us</a></li>
-      <li><a href="">Our Work</a></li>
-      <li><a href="">Blog</a></li>
-    </ul>
+    <div class="navlist">
+      <ul id="anchor">
+        <a class="firstanchor" href="">Home</a>
+        <a class="secondanchor" href="">About Us</a>
+        <a class="thirdanchor" href="">Our Work</a>
+        <a class="lastanchor" href="">Blog</a>
+      </ul>
+      <a id="bar" onclick=showSidebar() href=""><i class="fa-solid fa-bars" style="color: #F64F02;"></i></a>
+    </div>
+
 
     <ul class="sidebar">
-      <li><a href="">Home</a></li>
-      <li><a href="">About Us</a></li>
-      <li><a href="">Our Work</a></li>
-      <li><a href="">Blog</a></li>
+      <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-xmark"></i></a></li>
+      <li class="hide"><a href="">Home</a></li>
+      <li class="hide"><a href="">About Us</a></li>
+      <li class="hide"><a href="">Our Work</a></li>
+      <li class="hide"><a href="">Blog</a></li>
     </ul>
 
     <div class="dp">
@@ -278,6 +283,7 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/b206829fcf.js" crossorigin="anonymous"></script>
+  <script src="0-main.js"></script>
 </body>
 
 </html>
